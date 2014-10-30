@@ -1,32 +1,7 @@
-# The monitored navigation package
-           
+strands_navigation
+==================
 
-This package provides an actionlib server that executes, monitors and recovers from failure (possibly by asking for human help) a continuous navigation actionlib server, e.g., `move_base`. It receives a goal in the form:
-    
+Higher-level navigation capabilities
 
-    
-    string action_server
-    geometry_msgs/PoseStamped target_pose
-
-    
-where `action_server` is an actionlib server that receives a  `geometry_msgs/PoseStamped goal` (as `move_base`). It then executes it, with the same monitor and recovery behaviours as the old long-term patroller system. To test the monitored navigation with `move_base`:
-        
-    
-1. launch the scitos_bringup or morse:
-1. launch the STRANDS `move_base` action server:
-    
-    ```
-    roslaunch scitos_2d_navigation scitos_2d_nav.launch map:="your map"
-   ```
-   
-1. launch the monitored navigation action server:
-    
-    `roslaunch monitored_navigation monitored_nav.launch`
-    
-1. launch an actionlib client gui:
-    
-    ```
-    rosrun actionlib axclient.py /monitored_navigation
-    ```
-    
-1. fill the goal (in this case `action_server='move_base'`)
+Here is a diagram of the interactions between the components ([source](http://interactive.blockdiag.com/?compression=deflate&src=eJx9kt1KxDAQhe_3KUKvs09Q1osVwQuVRcQbkTJNxzaYZEJ-qovsu5s0dbvqshBIhvnOnHCSVpF47yT07GvFWLDsRUGLalM9kSVFvRSg2A6CI6XQVa91psxZ6gFG2UOQZAqG9oe6-UQRA7IdKSn2pauXIfdkZCCH3b8RThyhR9CWXSup21nfnuhH3ILH0hjgpHUbNZg1fIBD9hsbF_9n6eOZ-yv5Fo7MXS62OCSGoqu4D3uFbMM68AN2E59W7yjaKcmc5bTNeoiBDGmKvrElTWn6KhGHP7KZ98GB6XxjlkuVqYan6HgKt74gFilP34C1vqic4KO5JJjdBieLIIdY-PIr1lfJubx99s61NvMz5nPLk0UWJR-eg6tXh2-Var3n)):
+![components](http://interactive.blockdiag.com/image?compression=deflate&encoding=base64&src=eJx9kt1KxDAQhe_3KUKvs09Q1osVwQuVRcQbkTJNxzaYZEJ-qovsu5s0dbvqshBIhvnOnHCSVpF47yT07GvFWLDsRUGLalM9kSVFvRSg2A6CI6XQVa91psxZ6gFG2UOQZAqG9oe6-UQRA7IdKSn2pauXIfdkZCCH3b8RThyhR9CWXSup21nfnuhH3ILH0hjgpHUbNZg1fIBD9hsbF_9n6eOZ-yv5Fo7MXS62OCSGoqu4D3uFbMM68AN2E59W7yjaKcmc5bTNeoiBDGmKvrElTWn6KhGHP7KZ98GB6XxjlkuVqYan6HgKt74gFilP34C1vqic4KO5JJjdBieLIIdY-PIr1lfJubx99s61NvMz5nPLk0UWJR-eg6tXh2-Var3n)
