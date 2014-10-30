@@ -2,6 +2,9 @@
 Changelog for package strands_navigation_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.4 (2014-10-30)
+------------------
+
 0.0.3 (2014-10-29)
 ------------------
 * moving human_help_manager service definition to human_help_manager package
