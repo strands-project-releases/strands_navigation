@@ -1,0 +1,24 @@
+ros-indigo-strands-navigation (0.0.4-0trusty) trusty; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-indigo-strands-navigation (0.0.3-0trusty) trusty; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-indigo-strands-navigation (0.0.2-0trusty) trusty; urgency=high
+
+  * 0.0.1
+  * fixed CMakeLists.txt to be a proper meta package
+  * added changelogs
+  * Adding Missing TopologicalMap.msg and changing maintainer emails, names and Licences for Packages
+  * create metapackage
+  * Contributors: Bruno Lacerda, Jaime Pulido Fentanes, Marc Hanheide
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+
