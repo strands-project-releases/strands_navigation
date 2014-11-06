@@ -2,6 +2,11 @@
 Changelog for package topological_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.6 (2014-11-06)
+------------------
+* Corrected install locations.
+* Contributors: Nick Hawes
+
 0.0.5 (2014-11-05)
 ------------------
 * adding joystick creation of topological map
