@@ -1,0 +1,40 @@
+ros-hydro-joy-map-saver (0.0.6-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 06 Nov 2014 00:00:00 -0000
+
+ros-hydro-joy-map-saver (0.0.5-0precise) precise; urgency=high
+
+  * adding install targets renaming executables
+  * bug fix
+  * Adding licences and bug fix
+  * moving joy map saver here
+  * Contributors: Jaime Pulido Fentanes
+  * adding install targets renaming executables
+  * bug fix
+  * Adding licences and bug fix
+  * moving joy map saver here
+  * Contributors: Jaime Pulido Fentanes
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 05 Nov 2014 00:00:00 -0000
+
+ros-hydro-joy-map-saver (0.0.4-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-hydro-joy-map-saver (0.0.3-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 29 Oct 2014 17:00:00 -0000
+
+ros-hydro-joy-map-saver (0.0.2-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 29 Oct 2014 15:05:00 -0000
+
+
