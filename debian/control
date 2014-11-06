@@ -1,0 +1,12 @@
+Source: ros-hydro-joy-map-saver
+Section: misc
+Priority: extra
+Maintainer: Jaime Pulido Fentanes <pulidofentanes@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin, ros-hydro-roscpp, ros-hydro-rospy, ros-hydro-sensor-msgs, ros-hydro-std-msgs
+Homepage: https://github.com/strands-project/strands_navigation
+Standards-Version: 3.9.2
+
+Package: ros-hydro-joy-map-saver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-gmapping, ros-hydro-roscpp, ros-hydro-rospy, ros-hydro-sensor-msgs, ros-hydro-std-msgs
+Description: The map_saver package
