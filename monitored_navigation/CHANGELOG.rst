@@ -2,6 +2,9 @@
 Changelog for package monitored_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.8 (2014-11-11)
+------------------
+
 0.0.6 (2014-11-06)
 ------------------
 * add backtrack action server launch to monitored navigation launch
