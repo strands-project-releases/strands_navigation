@@ -12,7 +12,6 @@ find_package(catkin REQUIRED COMPONENTS
   smach_ros
   std_msgs
   std_srvs
-  dynamic_reconfigure 
   strands_navigation_msgs
 )
 
@@ -32,10 +31,10 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_python_setup()
 
 
-find_package(catkin REQUIRED dynamic_reconfigure)
-generate_dynamic_reconfigure_options(
-  cfg/NavFailTresholds.cfg
-)
+# find_package(catkin REQUIRED dynamic_reconfigure)
+# generate_dynamic_reconfigure_options(
+#   cfg/NavFailTresholds.cfg
+# )
 
 
 ################################################
@@ -161,11 +160,17 @@ include_directories(
 #   PATTERN ".svn" EXCLUDE
 # )
 
-## Mark other files for installation (e.g. launch and bag files, etc.)
-install(
-  DIRECTORY launch/
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
+
+#Mark other files for installation (e.g. launch and bag files, etc.)
+# install(
+#   DIRECTORY launch
+#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+# )
+# 
+# install(
+#   DIRECTORY config
+#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+# )
 
 install(PROGRAMS scripts/monitored_nav.py
          DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
