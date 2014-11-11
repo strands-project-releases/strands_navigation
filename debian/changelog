@@ -1,0 +1,52 @@
+ros-hydro-nav-goals-generator (0.0.8-1precise) precise; urgency=high
+
+  * Fixing import of service
+    Fixing #118 <https://github.com/strands-project/strands_navigation/issues/118>
+    Had to rename the node due to the old ROS python bug where the cannot have the same name as the package otherwise it cannot find its own messages or services.
+  * Contributors: Christian Dondrup
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Tue, 11 Nov 2014 00:00:00 -0000
+
+ros-hydro-nav-goals-generator (0.0.7-1precise) precise; urgency=high
+
+  * changed version number to be the same for all packages
+  * fix the new line in the launch file
+  * fix the launch file
+  * fix nav_goals_msgs dependency
+  * delete .swp
+  * move nav_goals_generator from strands_utils
+  * Contributors: Ferdian Jovan, Marc Hanheide
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Tue, 11 Nov 2014 00:00:00 -0000
+
+ros-hydro-nav-goals-generator (0.0.6-1precise) precise; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Thu, 06 Nov 2014 00:00:00 -0000
+
+ros-hydro-nav-goals-generator (0.0.5-1precise) precise; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 05 Nov 2014 00:00:00 -0000
+
+ros-hydro-nav-goals-generator (0.0.4-1precise) precise; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-hydro-nav-goals-generator (0.0.3-1precise) precise; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 29 Oct 2014 17:00:00 -0000
+
+ros-hydro-nav-goals-generator (0.0.2-1precise) precise; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 29 Oct 2014 15:05:00 -0000
+
+
