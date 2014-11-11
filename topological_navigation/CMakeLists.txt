@@ -125,12 +125,16 @@ include_directories(
    scripts/localisation.py
    scripts/nav_client.py
    scripts/navigation.py
+   scripts/visualise_map.py 
+   scripts/map_publisher.py
+   scripts/travel_time_estimator
+   scripts/execute_policy_server.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
 
 install(DIRECTORY launch
-   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
+   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
 
@@ -147,3 +151,10 @@ install(DIRECTORY launch
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+if (CATKIN_ENABLE_TESTING)
+  find_package(catkin REQUIRED COMPONENTS rostest)
+
+  add_rostest(tests/travel_time_estimator.test)
+
+endif()
