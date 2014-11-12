@@ -2,6 +2,9 @@
 Changelog for package nav_goals_generator
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.9 (2014-11-12)
+------------------
+
 0.0.8 (2014-11-11)
 ------------------
 * Fixing import of service
