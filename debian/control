@@ -1,0 +1,12 @@
+Source: ros-hydro-strands-navigation
+Section: misc
+Priority: extra
+Maintainer: Bruno Lacerda <b.lacerda@cs.bham.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-hydro-strands-navigation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-joy-map-saver, ros-hydro-message-store-map-switcher, ros-hydro-monitored-navigation, ros-hydro-nav-goals-generator, ros-hydro-strands-navigation-msgs, ros-hydro-topological-navigation, ros-hydro-topological-utils
+Description: The strands_navigation package
