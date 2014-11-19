@@ -1,3 +1,33 @@
+## strands_navigation (hydro) - 0.0.14-0
+
+The packages in the `strands_navigation` repository were released into the `hydro` distro by running `/usr/bin/bloom-release --non-interactive -t hydro -r hydro strands_navigation` on `Wed, 19 Nov 2014 08:51:07 -0000`
+
+These packages were released:
+- `joy_map_saver`
+- `message_store_map_switcher`
+- `monitored_navigation`
+- `nav_goals_generator`
+- `pose_initialiser`
+- `strands_navigation`
+- `strands_navigation_msgs`
+- `topological_navigation`
+- `topological_utils`
+
+Version of package(s) in repository `strands_navigation`:
+- upstream repository: https://github.com/strands-project/strands_navigation.git
+- release repository: https://github.com/strands-project-releases/strands_navigation.git
+- rosdistro version: `0.0.13-1`
+- old version: `0.0.13-1`
+- new version: `0.0.14-0`
+
+Versions of tools used:
+- bloom version: `0.5.12`
+- catkin_pkg version: `0.2.4`
+- rosdep version: `0.10.30`
+- rosdistro version: `0.3.5`
+- vcstools version: `0.1.35`
+
+
 ## strands_navigation (hydro) - 0.0.13-1
 
 The packages in the `strands_navigation` repository were released into the `hydro` distro by running `/usr/bin/bloom-release --non-interactive -t hydro -r hydro strands_navigation` on `Tue, 18 Nov 2014 11:14:12 -0000`
