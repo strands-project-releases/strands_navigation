@@ -1,0 +1,101 @@
+ros-hydro-pose-initialiser (0.0.16-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-hydro-pose-initialiser (0.0.15-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-hydro-pose-initialiser (0.0.14-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-hydro-pose-initialiser (0.0.13-0precise) precise; urgency=high
+
+  * changed version number to the rest of repo
+  * 
+    
+      * Fixing CMakeLists, Package.xml and License for pose initialiser
+      * Fix repeated install launch directory comand in topological utils CMakeLists
+      * Adding warning when monitored_navigation has not started on topological_navigation
+      * '/current_node' and '/closest_node' are now latched topics that are only published
+    when changed except if '~OnlyLatched' parameter is set to false when they
+    will be published with a frequency depending on '~LocalisationThrottle' value
+  * Recreated directory
+  * Contributors: Christian Dondrup, Jaime Pulido Fentanes, Marc Hanheide
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Tue, 18 Nov 2014 00:00:00 -0000
+
+ros-hydro-pose-initialiser (0.0.12-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Mon, 17 Nov 2014 00:00:00 -0000
+
+ros-hydro-pose-initialiser (0.0.11-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Fri, 14 Nov 2014 19:49:00 -0000
+
+ros-hydro-pose-initialiser (0.0.10-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Fri, 14 Nov 2014 11:30:00 -0000
+
+ros-hydro-pose-initialiser (0.0.9-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Wed, 12 Nov 2014 00:00:00 -0000
+
+ros-hydro-pose-initialiser (0.0.8-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Tue, 11 Nov 2014 14:06:00 -0000
+
+ros-hydro-pose-initialiser (0.0.7-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Tue, 11 Nov 2014 10:44:00 -0000
+
+ros-hydro-pose-initialiser (0.0.6-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Thu, 06 Nov 2014 00:00:00 -0000
+
+ros-hydro-pose-initialiser (0.0.5-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Wed, 05 Nov 2014 00:00:00 -0000
+
+ros-hydro-pose-initialiser (0.0.4-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-hydro-pose-initialiser (0.0.3-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Wed, 29 Oct 2014 17:00:00 -0000
+
+ros-hydro-pose-initialiser (0.0.2-0precise) precise; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>  Wed, 29 Oct 2014 15:05:00 -0000
+
+
