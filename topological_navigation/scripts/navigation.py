@@ -198,7 +198,7 @@ class TopologicalNavServer(object):
                 if self.navigation_activated :  #is the action server active?
                     self.stat.set_at_node()
                     # if the robot reached and intermediate node and the next action is move base goal has been reached
-                    if self.current_node == self.current_target and self._target != self.current_target and self.next_action in self.move_base_actions :
+                    if self.current_node == self.current_target and self._target != self.current_target and self.next_action in self.move_base_actions and self.current_action in self.move_base_actions :
                         rospy.loginfo('intermediate node reached %s', self.current_node)
                         self.goal_reached=True
                         
@@ -222,7 +222,7 @@ class TopologicalNavServer(object):
             # Target and Origin are Different and none of them is None
             if (Gnode is not None) and (Onode is not None) and (Gnode != Onode) :
                 route = self.search_route(Onode, target)
-                result=self.followRoute(route)
+                result, inc = self.followRoute(route)
             else :
                 # Target and Origin are the same
                 if(Gnode == Onode) :
@@ -243,14 +243,14 @@ class TopologicalNavServer(object):
                         result=True
                     else:
                         rospy.loginfo("Getting to exact pose")
-                        result= self.monitored_navigation(Onode.waypoint, action_server)
+                        result, inc = self.monitored_navigation(Onode.waypoint, action_server)
                         rospy.loginfo("going to waypoint in node resulted in")
                         print result
                 else:
                     rospy.loginfo("Target or Origin Nodes were not found on Map")
                     self.cancelled = True
                     result=False
-            tries+=1
+            tries+=inc
 
 
         if (not self.cancelled) and (not self.preempted) :
@@ -350,8 +350,9 @@ class TopologicalNavServer(object):
                 print 'Do move_base to %s' %self.closest_node#(route.source[0])
                 inf = route[0].waypoint
                 params = { 'yaw_goal_tolerance' : 0.087266 }   #5 degrees tolerance
-                self.rcnfclient.update_configuration(params)
-                nav_ok= self.monitored_navigation(inf,'move_base')
+                self.reconf_movebase(params)
+                #self.rcnfclient.update_configuration(params)
+                nav_ok, inc= self.monitored_navigation(inf,'move_base')
 
 
 
@@ -392,14 +393,16 @@ class TopologicalNavServer(object):
             # the current and following action are move_base or human_aware_navigation
             if rindex < route_len and a1 in self.move_base_actions and a in self.move_base_actions :
                 params = { 'yaw_goal_tolerance' : 6.283 }   # No orientation restrictions
-                self.rcnfclient.update_configuration(params)
+                self.reconf_movebase(params)
+                #self.rcnfclient.update_configuration(params)
 
 
             inf = route[rindex+1].waypoint
             self.current_target = route[rindex+1].name
-            nav_ok= self.monitored_navigation(inf, a)
+            nav_ok, inc = self.monitored_navigation(inf, a)
             params = { 'yaw_goal_tolerance' : 0.087266 }   #5 degrees tolerance
-            self.rcnfclient.update_configuration(params)
+            self.reconf_movebase(params)
+            #self.rcnfclient.update_configuration(params)
             rospy.loginfo('setting parameters back')
             
             
@@ -443,13 +446,14 @@ class TopologicalNavServer(object):
 
 
         params = { 'yaw_goal_tolerance' : self.dyt }   #setting original config back
-        self.rcnfclient.update_configuration(params)
+        self.reconf_movebase(params)
+        #self.rcnfclient.update_configuration(params)
 
 
         self.navigation_activated=False
 
         result=nav_ok
-        return result
+        return result, inc
 
 
     def publish_stats(self):
@@ -477,6 +481,7 @@ class TopologicalNavServer(object):
 
 
     def monitored_navigation(self, inf, command):
+        inc = 0
         result = True
         goal=MonitoredNavigationGoal()
         goal.action_server=command
@@ -499,6 +504,10 @@ class TopologicalNavServer(object):
 
         #rospy.loginfo(str(status))
         #print status
+        res=self.monNavClient.get_result()
+#        print "--------------RESULT------------"
+#        print res
+#        print "--------------RESULT------------"
         if status != GoalStatus.SUCCEEDED :
             if not self.goal_reached:
                 result = False
@@ -506,9 +515,27 @@ class TopologicalNavServer(object):
                     self.preempted = True
             else:
                 result = True
+
+        if not res:
+            if not result:
+                inc = 1
+            else :
+                inc = 0
+        else:
+            if res.recovered is True and res.human_interaction is False :
+                inc = 1
+            else :
+                inc = 0
+
             
         rospy.sleep(rospy.Duration.from_sec(0.3))
-        return result
+        return result, inc
+
+    def reconf_movebase(self, params):
+        try:
+            self.rcnfclient.update_configuration(params)
+        except rospy.ServiceException as exc:
+            rospy.logwarn("I couldn't reconfigure move_base parameters. Caught service exception: %s. will continue with previous params", exc)
 
 
 
