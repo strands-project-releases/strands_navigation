@@ -1,0 +1,12 @@
+Source: ros-hydro-nav-goals-generator
+Section: misc
+Priority: extra
+Maintainer: Lars Kunze <l.kunze@cs.bham.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin, ros-hydro-geometry-msgs, ros-hydro-message-generation, ros-hydro-nav-msgs, ros-hydro-rospy, ros-hydro-std-msgs, ros-hydro-tf, ros-hydro-visualization-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-hydro-nav-goals-generator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-geometry-msgs, ros-hydro-message-generation, ros-hydro-nav-msgs, ros-hydro-rospy, ros-hydro-std-msgs, ros-hydro-tf, ros-hydro-visualization-msgs
+Description: The nav_goals_generator package
