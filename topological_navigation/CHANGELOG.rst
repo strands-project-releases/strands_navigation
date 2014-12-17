@@ -2,6 +2,9 @@
 Changelog for package topological_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.23 (2014-12-17)
+-------------------
+
 0.0.22 (2014-11-26)
 -------------------
 * Got the speed more correct.
