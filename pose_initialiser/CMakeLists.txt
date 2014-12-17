@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(topological_utils)
+project(pose_initialiser)
 
-find_package(catkin REQUIRED rospy roscpp std_msgs geometry_msgs message_generation mongodb_store visualization_msgs)
+find_package(catkin REQUIRED rospy std_msgs geometry_msgs)
 
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
@@ -62,38 +62,10 @@ catkin_package(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
  install(PROGRAMS
-   scripts/add_edge.py
-   scripts/add_node.py
-   scripts/crop_map.py
-   scripts/insert_map.py
-   scripts/LoadPointSet.py
-   scripts/map_collection_change.py
-   scripts/map_export.py
-   scripts/node_rm.py
-   scripts/rm_map_from_db.py
-   scripts/tmap_from_waypoints.py
-   scripts/joy_add_node.py
-   scripts/topological_map_update.py
-   scripts/dummy_topological_navigation
+   scripts/pose_initialiser.py
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
 
-# Mark other files for installation (e.g. launch and bag files, etc.)
-install(
-  DIRECTORY launch
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-
-install(DIRECTORY support
-   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-
-## Mark other files for installation (e.g. launch and bag files, etc.)
-# install(FILES
-#   # myfile1
-#   # myfile2
-#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-# )
 
 #############
 ## Testing ##

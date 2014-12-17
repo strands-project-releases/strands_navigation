@@ -2,6 +2,90 @@
 Changelog for package topological_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.23 (2014-12-17)
+-------------------
+
+0.0.22 (2014-11-26)
+-------------------
+* Got the speed more correct.
+* Fixing typo, also now the top loc will check for the influence area of the two closest nodes instead of just the closest
+* removing docking from action that are allowed so the robot navigates to closest node that now is never ChargingStation
+* adding ChargingPoint exception to localisation
+* Triying Docking when Charging station is the closest node
+* Fixing indentation
+* Bug Fix with inc variable not being set on special cases
+* Contributors: Nick Hawes, STRANDS user on Pablo-PC
+
+0.0.21 (2014-11-23)
+-------------------
+* Merge branch 'hydro-devel' of https://github.com/Jailander/strands_navigation into hydro-devel
+* error handling when no route is possible
+* adding sleep to reduce cpu consumption
+* Contributors: Jaime Pulido Fentanes
+
+0.0.20 (2014-11-21)
+-------------------
+* replcaing result for nav_ok
+* Contributors: Jaime Pulido Fentanes
+
+0.0.19 (2014-11-21)
+-------------------
+* typo
+* Contributors: Jaime Pulido Fentanes
+
+0.0.18 (2014-11-21)
+-------------------
+* bug fix
+* Now checking if there is a move_base action in the edges of the first node
+  in route if not it's dangerous to move or inconvenient
+  like in the charging station
+* Contributors: Jaime Pulido Fentanes
+
+0.0.17 (2014-11-21)
+-------------------
+* catching reconfigur move_base exception
+* only increase the fail counter of monitored navigation if result.recovered is True and result.human_interaction is False as suggested by @BFALacerda
+* fixing bug with an even longer if
+* Contributors: Jaime Pulido Fentanes
+
+0.0.16 (2014-11-21)
+-------------------
+* removinf scitos_msgs from CmakeLists
+* making robot navigate to Way Point always when the first action is not move_base type
+* Added locking to service call.
+* removing old dependency on scitos_msgs from top nav
+* Contributors: Bruno Lacerda, Jaime Pulido Fentanes, Nick Hawes
+
+0.0.15 (2014-11-19)
+-------------------
+
+0.0.14 (2014-11-19)
+-------------------
+* Update README.md
+* Contributors: Jaime Pulido Fentanes
+
+0.0.12 (2014-11-17)
+-------------------
+
+0.0.11 (2014-11-14)
+-------------------
+* bug fix
+* Contributors: Jaime Pulido Fentanes
+
+0.0.10 (2014-11-14)
+-------------------
+* replanning when failing
+* Adding retries to topological navigation and current edge publisher
+* Update README.md
+* Contributors: Jaime Pulido Fentanes
+
+0.0.9 (2014-11-12)
+------------------
+* Merge pull request `#120 <https://github.com/strands-project/strands_navigation/issues/120>`_ from BFALacerda/hydro-devel
+  adding monitored_nav to topological_navigation.launch.
+* adding monitored_nav to topological_navigation.launch. default is monitored_nav without recovery behaviours
+* Contributors: BFALacerda, Bruno Lacerda
+
 0.0.8 (2014-11-11)
 ------------------
 
