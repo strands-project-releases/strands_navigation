@@ -1,0 +1,12 @@
+Source: ros-indigo-message-store-map-switcher
+Section: misc
+Priority: extra
+Maintainer: Nick Hawes <n.a.hawes@cs.bham.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), libsdl-image1.2-dev, libyaml-cpp-dev, ros-indigo-catkin, ros-indigo-map-server, ros-indigo-message-generation, ros-indigo-mongodb-store, ros-indigo-nav-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-message-store-map-switcher
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libsdl-image1.2-dev, libyaml-cpp-dev, ros-indigo-map-server, ros-indigo-mongodb-store, ros-indigo-nav-msgs
+Description: A package for manipulating and serving maps from the mongodb_store.
