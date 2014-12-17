@@ -30,6 +30,7 @@ add_message_files(
   NavRoute.msg
   Edge.msg
   Vertex.msg
+  CurrentEdge.msg
 )
 
 #Generate services in the 'srv' folder
@@ -44,6 +45,7 @@ add_service_files(
   SetHelpers.srv
   AskHelp.srv
   EstimateTravelTime.srv
+  PauseResumeNav.srv
 )
 
 
