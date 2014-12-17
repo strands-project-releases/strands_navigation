@@ -2,6 +2,61 @@
 Changelog for package monitored_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.23 (2014-12-17)
+-------------------
+* publishers now created with an explicit queue_size (indigo doesnt like it otherwise)
+* Contributors: Bruno Lacerda
+
+0.0.22 (2014-11-26)
+-------------------
+
+0.0.21 (2014-11-23)
+-------------------
+
+0.0.20 (2014-11-21)
+-------------------
+* fixing typo
+* Contributors: Bruno Lacerda
+
+0.0.19 (2014-11-21)
+-------------------
+
+0.0.18 (2014-11-21)
+-------------------
+
+0.0.17 (2014-11-21)
+-------------------
+
+0.0.16 (2014-11-21)
+-------------------
+* changing logging default back to true (top nav wont log nav recoveries after all)
+* making sure everything preempts
+* only looking at filtered argv
+* Contributors: Bruno Lacerda
+
+0.0.15 (2014-11-19)
+-------------------
+
+0.0.14 (2014-11-19)
+-------------------
+
+0.0.12 (2014-11-17)
+-------------------
+
+0.0.11 (2014-11-14)
+-------------------
+
+0.0.10 (2014-11-14)
+-------------------
+* replanning when failing
+* checking correctness of monitored_navigation argument
+* Contributors: Bruno Lacerda, Jaime Pulido Fentanes
+
+0.0.9 (2014-11-12)
+------------------
+* adding monitored_nav to topological_navigation.launch. default is monitored_nav without recovery behaviours
+* Contributors: Bruno Lacerda
+
 0.0.8 (2014-11-11)
 ------------------
 
