@@ -64,6 +64,7 @@ catkin_package(
  install(PROGRAMS
    scripts/add_edge.py
    scripts/add_node.py
+   scripts/crop_map.py
    scripts/insert_map.py
    scripts/LoadPointSet.py
    scripts/map_collection_change.py
@@ -72,6 +73,7 @@ catkin_package(
    scripts/rm_map_from_db.py
    scripts/tmap_from_waypoints.py
    scripts/joy_add_node.py
+   scripts/topological_map_update.py
    scripts/dummy_topological_navigation
    DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
  )
@@ -80,25 +82,6 @@ catkin_package(
 install(
   DIRECTORY launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
-
-
-## Mark executables and/or libraries for installation
-# install(TARGETS topological_utils topological_utils_node
-#   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-#   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
-
-## Mark cpp header files for installation
-# install(DIRECTORY include/${PROJECT_NAME}/
-#   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
-#   FILES_MATCHING PATTERN "*.h"
-#   PATTERN ".svn" EXCLUDE
-# )
-
-install(DIRECTORY launch
-   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
 install(DIRECTORY support
