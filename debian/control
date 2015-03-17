@@ -1,0 +1,12 @@
+Source: ros-indigo-strands-navigation-msgs
+Section: misc
+Priority: extra
+Maintainer: Bruno Lacerda <b.lacerda@cs.bham.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-actionlib, ros-indigo-actionlib-msgs, ros-indigo-catkin, ros-indigo-geometry-msgs, ros-indigo-message-generation, ros-indigo-sensor-msgs, ros-indigo-std-msgs
+Homepage: http://www/
+Standards-Version: 3.9.2
+
+Package: ros-indigo-strands-navigation-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-actionlib, ros-indigo-actionlib-msgs, ros-indigo-geometry-msgs, ros-indigo-sensor-msgs, ros-indigo-std-msgs
+Description: The strands_navigation_msgs package
