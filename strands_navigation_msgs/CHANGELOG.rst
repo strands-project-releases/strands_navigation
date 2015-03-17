@@ -2,6 +2,12 @@
 Changelog for package strands_navigation_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.24 (2015-03-17)
+-------------------
+* adding sensor_msgs to package.xml
+* adding costmaps to the monitored nav event logging
+* Contributors: Bruno Lacerda
+
 0.0.23 (2014-12-17)
 -------------------
 
