@@ -6,7 +6,7 @@ find_package(catkin REQUIRED rospy roscpp std_msgs geometry_msgs message_generat
 ## Uncomment this if the package has a setup.py. This macro ensures
 ## modules and global scripts declared therein get installed
 ## See http://ros.org/doc/api/catkin/html/user_guide/setup_dot_py.html
-# catkin_python_setup()
+catkin_python_setup()
 
 
 
@@ -20,6 +20,14 @@ find_package(catkin REQUIRED rospy roscpp std_msgs geometry_msgs message_generat
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 
+add_service_files(
+    FILES
+    NodeMetadata.srv
+)
+generate_messages(
+DEPENDENCIES
+    std_msgs 
+)
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES topological_utils
@@ -40,6 +48,8 @@ catkin_package(
 #   src/${PROJECT_NAME}/topological_utils.cpp
 # )
 
+
+
 ## Declare a cpp executable
 # add_executable(topological_utils_node src/topological_utils_node.cpp)
 
@@ -59,6 +69,7 @@ catkin_package(
 # all install targets should use catkin DESTINATION variables
 # See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html
 
+
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
  install(PROGRAMS
@@ -66,6 +77,7 @@ catkin_package(
    scripts/add_node.py
    scripts/crop_map.py
    scripts/insert_map.py
+   scripts/list_maps
    scripts/LoadPointSet.py
    scripts/map_collection_change.py
    scripts/map_export.py
