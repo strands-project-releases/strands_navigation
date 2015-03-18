@@ -2,6 +2,11 @@
 Changelog for package topological_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.26 (2015-03-18)
+-------------------
+* Forgot the install targets
+* Contributors: Nick Hawes
+
 0.0.25 (2015-03-18)
 -------------------
 * Added the option to simulate time as an argument to the file.
