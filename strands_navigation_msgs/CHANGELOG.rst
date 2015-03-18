@@ -2,6 +2,9 @@
 Changelog for package strands_navigation_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.25 (2015-03-18)
+-------------------
+
 0.0.24 (2015-03-17)
 -------------------
 * adding sensor_msgs to package.xml
