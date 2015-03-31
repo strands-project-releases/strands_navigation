@@ -32,11 +32,13 @@ add_message_files(
   CurrentEdge.msg
   DynClassLoaderDef.msg
   MonitoredNavEvent.msg
+  TopologicalRoute.msg
 )
 
 #Generate services in the 'srv' folder
 add_service_files(
   FILES
+  AddEdge.srv
   AddMonitorRecoveryPair.srv
   DelMonitorRecoveryPair.srv
   SetMonitorRecoveryPairs.srv
@@ -52,6 +54,10 @@ add_service_files(
   PauseResumeNav.srv
   GetTopologicalMap.srv
   AddNode.srv
+  AddTag.srv
+  GetTaggedNodes.srv
+  GetEdgesBetweenNodes.srv
+  PredictEdgeState.srv
 )
 
 
