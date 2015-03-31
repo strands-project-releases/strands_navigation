@@ -28,6 +28,7 @@ from topological_navigation.navigation_stats import *
 import topological_navigation.msg
 import dynamic_reconfigure.client
 
+import strands_navigation_msgs.msg
 
 
 """
@@ -63,9 +64,11 @@ class TopologicalNavServer(object):
         self._action_name = name
         self.stats_pub = rospy.Publisher('/topological_navigation/Statistics', NavStatistics)
         self.edge_pub = rospy.Publisher('/topological_navigation/Edge', CurrentEdge)
+        self.route_pub = rospy.Publisher('/topological_navigation/Route', strands_navigation_msgs.msg.TopologicalRoute)
         self.cur_edge = rospy.Publisher('/current_edge', String)        
         self.monit_nav_cli= False
 
+        
         
         #Waiting for Topological Map        
         self.lnodes = []
@@ -74,6 +77,8 @@ class TopologicalNavServer(object):
         while len(self.lnodes) == 0:
             pass
         rospy.loginfo(" ...done")
+        
+        
         rospy.set_param('topological_map_name', self.topol_map)
 
 
@@ -110,6 +115,22 @@ class TopologicalNavServer(object):
         rospy.loginfo("All Done ...")
         rospy.spin()
 
+    def get_edge_id(self, orig, dest, a):
+        found = False
+        edge_id= 'none'
+        for i in self.curr_tmap.nodes:
+            if i.name == orig:
+                for j in i.edges:
+                    if j.node == dest and j.action == a :
+                        found = True
+                        edge_id = j.edge_id
+                        break
+            if found:
+                break
+        
+        return edge_id
+
+
 
     """
      Update Map CallBack
@@ -117,6 +138,7 @@ class TopologicalNavServer(object):
      This Function updates the Topological Map everytime it is called
     """
     def MapCallback(self, msg) :
+        self.curr_tmap = msg
         self.topol_map = msg.pointset
         points = []
         for i in msg.nodes : 
@@ -169,11 +191,11 @@ class TopologicalNavServer(object):
      Preempt CallBack
     """
     def preemptCallback(self):
+        self.monNavClient.cancel_all_goals()
         self.cancelled = True
         self.preempted = True
         self._result.success = False
         self.navigation_activated = False
-        self.monNavClient.cancel_all_goals()
         #self._as.set_preempted(self._result)
 
 
@@ -223,6 +245,7 @@ class TopologicalNavServer(object):
             if (Gnode is not None) and (Onode is not None) and (Gnode != Onode) :
                 route = self.search_route(Onode, target)
                 if route:
+                    self.publish_route(route)
                     result, inc = self.followRoute(route)
                 else:
                     rospy.logerr("There is no route to this node check your edges ...")
@@ -406,7 +429,9 @@ class TopologicalNavServer(object):
             self._feedback.route = '%s to %s using %s' % (route[rindex].name, route[rindex+1].name, a)
             self._as.publish_feedback(self._feedback)
 
-            self.stat=nav_stats(route[rindex].name, route[rindex+1].name, self.topol_map)
+
+            edg= self.get_edge_id(route[rindex].name, route[rindex+1].name, a)
+            self.stat=nav_stats(route[rindex].name, route[rindex+1].name, self.topol_map, edg)
             dt_text=self.stat.get_start_time_str()
 
             # do not care for the orientation of the waypoint if is not the last waypoint AND
@@ -475,9 +500,17 @@ class TopologicalNavServer(object):
         result=nav_ok
         return result, inc
 
+    def publish_route(self, route):
+        stroute = strands_navigation_msgs.msg.TopologicalRoute()
+        for i in route:
+            stroute.nodes.append(i.name)
+        self.route_pub.publish(stroute)
+        
+
 
     def publish_stats(self):
         pubst = NavStatistics()
+        pubst.edge_id = self.stat.edge_id
         pubst.status = self.stat.status
         pubst.origin = self.stat.origin
         pubst.target = self.stat.target
@@ -496,7 +529,7 @@ class TopologicalNavServer(object):
         meta["date"] = self.stat.date_at_node.strftime('%A, %B %d %Y, at %H:%M:%S hours')
         meta["pointset"] = self.stat.topological_map
 
-        msg_store = MessageStoreProxy()
+        msg_store = MessageStoreProxy(collection='nav_stats')
         msg_store.insert(pubst,meta)
 
 
