@@ -2,6 +2,9 @@
 Changelog for package monitored_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.32 (2015-04-12)
+-------------------
+
 0.0.31 (2015-04-10)
 -------------------
 * set n_tries to 1 when it doesnt come from userdata
