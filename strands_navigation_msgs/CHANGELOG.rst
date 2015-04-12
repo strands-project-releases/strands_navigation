@@ -2,6 +2,9 @@
 Changelog for package strands_navigation_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.32 (2015-04-12)
+-------------------
+
 0.0.31 (2015-04-10)
 -------------------
 * change mon nav events to allow for more failures to be logged
