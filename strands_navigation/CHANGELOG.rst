@@ -2,6 +2,9 @@
 Changelog for package strands_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.32 (2015-04-12)
+-------------------
+
 0.0.31 (2015-04-10)
 -------------------
 * Adding topological_logging_manager to meta package
