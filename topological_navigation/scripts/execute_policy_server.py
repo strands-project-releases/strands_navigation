@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import math
 import rospy
 import actionlib
 import pymongo
@@ -278,14 +279,9 @@ class PolicyExecutionServer(object):
 #                        action = self.find_action(route.source[nod_ind], route.target[nod_ind])
                         action, target = self.find_action(route.source[nod_ind], route.edge_id[nod_ind])
                         if action != 'none':
-                            if action in self.move_base_actions :
-                                self.current_action = action
-                                print '%s -(%s)-> %s' %(route.source[nod_ind], self.current_action, target)
-                                success=self.navigate_to(self.current_action,target)
-                            else:                           
-                                print 'Do move_base to %s' %self.current_node#(route.source[0])
-                                self.current_action = 'move_base'
-                                success=self.navigate_to(self.current_action,self.current_node)
+                            self.current_action = action
+                            print '%s -(%s)-> %s' %(route.source[nod_ind], self.current_action, target)
+                            success=self.navigate_to(self.current_action,target)
                         else:
                             success = False
                             keep_executing = False
@@ -398,6 +394,7 @@ class PolicyExecutionServer(object):
             if i.name == node :
                 found = True
                 target_pose = i.pose#[0]
+                tolerance=i.xy_goal_tolerance
                 break
         
         if found:
@@ -409,8 +406,12 @@ class PolicyExecutionServer(object):
             self.stat=nav_stats(self.current_node, node, self.topol_map, edg)
             #dt_text=self.stat.get_start_time_str()
 
+            if action in self.move_base_actions and node in self.current_route.source:
+                rospy.set_param("/move_base/NavfnROS/default_tolerance",tolerance/math.sqrt(2))  
+                
             result = self.monitored_navigation(target_pose, action)
-
+            
+            rospy.set_param("/move_base/NavfnROS/default_tolerance",0.0)
 
             self.stat.set_ended(self.current_node)
 
