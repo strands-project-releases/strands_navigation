@@ -1,0 +1,192 @@
+ros-indigo-joy-map-saver (0.0.35-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sun, 10 May 2015 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.34-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 05 May 2015 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.32-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sun, 12 Apr 2015 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.31-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 10 Apr 2015 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.29-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 23 Mar 2015 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.28-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 20 Mar 2015 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.27-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 19 Mar 2015 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.26-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 18 Mar 2015 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.25-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 18 Mar 2015 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.24-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 17 Mar 2015 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.23-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 17 Dec 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.22-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 26 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.21-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sun, 23 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.20-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.19-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.18-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.17-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.16-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.15-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.14-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.12-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 17 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.11-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 14 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.10-0trusty) trusty; urgency=high
+
+  * mapping launch files
+  * Create README.md
+  * Contributors: Jaime Pulido Fentanes
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 14 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.9-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 12 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.8-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 11 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.6-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 06 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.5-0trusty) trusty; urgency=high
+
+  * adding install targets renaming executables
+  * bug fix
+  * Adding licences and bug fix
+  * moving joy map saver here
+  * Contributors: Jaime Pulido Fentanes
+  * adding install targets renaming executables
+  * bug fix
+  * Adding licences and bug fix
+  * moving joy map saver here
+  * Contributors: Jaime Pulido Fentanes
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 05 Nov 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.4-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.3-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 29 Oct 2014 17:00:00 -0000
+
+ros-indigo-joy-map-saver (0.0.2-0trusty) trusty; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 29 Oct 2014 15:05:00 -0000
+
+
