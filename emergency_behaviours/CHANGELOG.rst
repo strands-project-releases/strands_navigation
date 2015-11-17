@@ -2,6 +2,9 @@
 Changelog for package emergency_behaviours
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.38 (2015-11-17)
+-------------------
+
 0.0.37 (2015-08-26)
 -------------------
 * cancelling move_base too
