@@ -63,11 +63,9 @@ class PolicyExecutionServer(object):
         self.cancelled = False
         self.preempted = False
         #self.aborted = False
-        self.current_node = 'unknown'
-        self.closest_node = 'unknown'
         self.current_action = 'none'
         self.current_route = None
-        self.n_tries = 3        
+        self.n_tries = rospy.get_param('~retries', 3)
         
         rospy.on_shutdown(self._on_node_shutdown)
         self.move_base_actions = ['move_base','human_aware_navigation']
@@ -76,7 +74,7 @@ class PolicyExecutionServer(object):
         
         self.navigation_activated=False
         self._action_name = '/topological_navigation/execute_policy_mode'
-        self.stats_pub = rospy.Publisher('/execute_policy_mode/Statistics', NavStatistics)
+        self.stats_pub = rospy.Publisher('/execute_policy_mode/Statistics', NavStatistics, queue_size=1)
 
 
         self.lnodes = []
@@ -89,14 +87,6 @@ class PolicyExecutionServer(object):
         if 'move_base' not in self.needed_move_base_actions:
             self.needed_move_base_actions.append('move_base')
         
-        #Creating Action Server
-        rospy.loginfo("Creating action server.")
-        self._as = actionlib.SimpleActionServer(self._action_name, strands_navigation_msgs.msg.ExecutePolicyModeAction, execute_cb = self.executeCallback, auto_start = False)
-        self._as.register_preempt_callback(self.preemptCallback)
-        rospy.loginfo(" ...starting")
-        self._as.start()
-        rospy.loginfo(" ...done")
-
 
         #Creating monitored navigation client
         rospy.loginfo("Creating monitored navigation client.")
@@ -106,34 +96,79 @@ class PolicyExecutionServer(object):
 
 
         #Subscribing to Localisation Topics
+        rospy.loginfo("Waiting for Localisation Topics")
+        self.current_node = rospy.wait_for_message('/current_node', String)
+        self.closest_node = rospy.wait_for_message('/closest_node', String)
         rospy.loginfo("Subscribing to Localisation Topics")
         rospy.Subscriber('/closest_node', String, self.closestNodeCallback)
         rospy.Subscriber('/current_node', String, self.currentNodeCallback)
         rospy.loginfo(" ...done")
 
+        mb_service_created=False
         self.rcnfclient={}
         config = {}
-        service_names = rosservice.get_service_list()
         
+            
         #Creating Reconfigure Client
         for i in self.needed_move_base_actions:
             client = None
             rcnfsrvrname= '/'+i+'/DWAPlannerROS'
             test_service = rcnfsrvrname+'/set_parameters'
             
-            if test_service in service_names:
-                rospy.loginfo("Creating Reconfigure Client %s" %rcnfsrvrname)
-                client = dynamic_reconfigure.client.Client(rcnfsrvrname, timeout=10)
-                self.rcnfclient[i] = client
-                config[i] = self.rcnfclient[i].get_configuration()
-            else:
-                rospy.logwarn("I couldn't create reconfigure client %s." %rcnfsrvrname)
-        
-        self.dyt = config['move_base']['yaw_goal_tolerance']
-        rospy.loginfo("default yaw tolerance %f" %self.dyt)
+            service_created=False
+            service_created_tries=50
+            while service_created_tries>0 and not self.cancelled :              
+                service_names = rosservice.get_service_list()
+                if test_service in service_names:
+                    rospy.loginfo("Creating Reconfigure Client %s" %rcnfsrvrname)
+                    client = dynamic_reconfigure.client.Client(rcnfsrvrname, timeout=10)
+                    self.rcnfclient[i] = client
+                    config[i] = self.rcnfclient[i].get_configuration()
+                    service_created=True
+                    service_created_tries=0
+                else:
+                    service_created_tries-=1
+                    if service_created_tries>0:
+                        rospy.logwarn("I couldn't create reconfigure client %s. remaining tries %d" %(rcnfsrvrname,service_created_tries))
+                        rospy.sleep(1)
+                    else:
+                        rospy.logerr("I couldn't create reconfigure client %s. is %s running?" %(rcnfsrvrname, i))
+            if service_created and i == 'move_base':
+                mb_service_created=True
+                
+        if mb_service_created:
+            self.dyt = config['move_base']['yaw_goal_tolerance']
+        else:
+            while not mb_service_created and not self.cancelled:
+                rcnfsrvrname= '/move_base/DWAPlannerROS'
+                test_service = rcnfsrvrname+'/set_parameters'
+                rospy.logwarn("%s must be created! will keep trying until its there" %rcnfsrvrname)
+                service_names = rosservice.get_service_list()
+                if test_service in service_names:
+                    rospy.loginfo("Creating Reconfigure Client %s" %rcnfsrvrname)
+                    client = dynamic_reconfigure.client.Client(rcnfsrvrname, timeout=10)
+                    self.rcnfclient['move_base'] = client
+                    config['move_base'] = self.rcnfclient['move_base'].get_configuration()
+                    mb_service_created=True
+                else:
+                    rospy.sleep(1)
 
-        rospy.loginfo("All Done ...")
-        rospy.spin()
+        
+        if not self.cancelled:
+            self.dyt = config['move_base']['yaw_goal_tolerance']
+            rospy.loginfo("default yaw tolerance %f" %self.dyt)
+    
+            #Creating Action Server
+            rospy.loginfo("Creating action server.")
+            self._as = actionlib.SimpleActionServer(self._action_name, strands_navigation_msgs.msg.ExecutePolicyModeAction, execute_cb = self.executeCallback, auto_start = False)
+            self._as.register_preempt_callback(self.preemptCallback)
+            rospy.loginfo(" ...starting")
+            self._as.start()
+            rospy.loginfo(" ...done")
+    
+    
+            rospy.loginfo("EPM All Done ...")
+            rospy.spin()
 
 
     """
