@@ -2,6 +2,9 @@
 Changelog for package strands_navigation_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.40 (2016-02-07)
+-------------------
+
 0.0.39 (2016-01-28)
 -------------------
 * Impossible tests now require the navigation to fail on its own accord
