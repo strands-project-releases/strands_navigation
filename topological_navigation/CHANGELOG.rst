@@ -2,6 +2,13 @@
 Changelog for package topological_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.42 (2016-03-21)
+-------------------
+* Removing lambda function
+* calling the instance does not return anything. appending to list first and the calling.
+* Making localise by topic wait for the topic to be published
+* Contributors: Christian Dondrup
+
 0.0.41 (2016-03-03)
 -------------------
 
