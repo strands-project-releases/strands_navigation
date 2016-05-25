@@ -33,6 +33,31 @@ class LocaliseByTopicSubscriber(object):
         self.sub = None
         self.t = None
 
+    def get_topic_type(self, topic, blocking=False):
+        """
+        Get the topic type.
+        !!! Overriden from rostopic !!!
+
+        :param topic: topic name, ``str``
+        :param blocking: (default False) block until topic becomes available, ``bool``
+
+        :returns: topic type, real topic name and fn to evaluate the message instance
+          if the topic points to a field within a topic, e.g. /rosout/msg. fn is None otherwise. ``(str, str, fn)``
+        :raises: :exc:`ROSTopicException` If master cannot be contacted
+        """
+        topic_type, real_topic, msg_eval = rostopic._get_topic_type(topic)
+        if topic_type:
+            return topic_type, real_topic, msg_eval
+        elif blocking:
+            sys.stderr.write("WARNING: topic [%s] does not appear to be published yet\n"%topic)
+            while not rospy.is_shutdown():
+                topic_type, real_topic, msg_eval = rostopic._get_topic_type(topic)
+                if topic_type:
+                    return topic_type, real_topic, msg_eval
+                else:
+                    rostopic._sleep(10.) # Change! Waiting for 10 seconds instead of 0.1 to reduce load
+        return None, None, None
+
     def __call__(self):
         """
         When called start a new thread that waits for the topic type and then
@@ -46,6 +71,7 @@ class LocaliseByTopicSubscriber(object):
         Get the topic type and subscribe to topic. Subscriber is kept alive as
         long as the instance of the class is alive.
         """
+        rostopic.get_topic_type = self.get_topic_type # Monkey patch
         topic_type = rostopic.get_topic_class(self.topic, True)[0]
         rospy.loginfo("Subscribing to %s" % self.topic)
         self.sub = rospy.Subscriber(
@@ -81,6 +107,7 @@ class TopologicalNavLoc(object):
 
         #This service returns a list of nodes that have a given tag
         self.get_tagged_srv=rospy.Service('/topological_localisation/get_nodes_with_tag', strands_navigation_msgs.srv.GetTaggedNodes, self.get_nodes_wtag_cb)
+        self.get_tagged_srv=rospy.Service('/topological_localisation/localise_pose', strands_navigation_msgs.srv.LocalisePose, self.localise_pose_cb)
 
         rospy.Subscriber('/topological_map', TopologicalMap, self.MapCallback)
         rospy.loginfo("Waiting for Topological map ...")
@@ -110,21 +137,35 @@ class TopologicalNavLoc(object):
         rospy.loginfo("All Done ...")
         rospy.spin()
 
+    """
+     get_distances_to_pose
 
+     This function returns the distance from each waypoint to a pose in an organised way
+    """
+    def get_distances_to_pose(self, pose):
+        distances=[]
+        for i in self.tmap.nodes:
+            d= get_distance_node_pose(i, pose)#get_distance_to_node(i, msg)
+            a={}
+            a['node'] = i
+            a['dist'] = d
+            distances.append(a)
+    
+        distances = sorted(distances, key=lambda k: k['dist'])
+        return distances
+
+    """
+     PoseCallback
+
+     This function receives the Robot Pose and localises 
+     the robot in topological space
+    """
     def PoseCallback(self, msg):
         self.current_pose = msg
         if(self.throttle%self.throttle_val==0):
             #rospy.loginfo("NO GO NODES: %s" %self.nogos)
-            self.distances=[]
-            for i in self.tmap.nodes:
-                d= get_distance_node_pose(i, msg)#get_distance_to_node(i, msg)
-                a={}
-                a['node'] = i
-                a['dist'] = d
-                self.distances.append(a)
-
-            self.distances = sorted(self.distances, key=lambda k: k['dist'])
-            #print self.distances
+            self.distances =[]
+            self.distances = self.get_distances_to_pose(msg)
             closeststr='none'
             currentstr='none'
 
@@ -154,9 +195,10 @@ class TopologicalNavLoc(object):
                             closeststr=currentstr
                             not_loc=False
                     ind+=1
-
+                          
                 ind = 0
                 not_loc=True
+                # No go nodes and Nodes localisable by topic are ONLY closest node when the robot is within them
                 while not_loc and ind<len(self.distances) and closeststr=='none' :
                     if self.distances[ind]['node'].name not in self.nogos and self.distances[ind]['node'].name not in self.names_by_topic :
                         closeststr=str(self.distances[ind]['node'].name)
@@ -242,7 +284,7 @@ class TopologicalNavLoc(object):
 
                 #if item['name'] not in self.loc_by_topic:
                 if item['name'] not in [x['name'] for x in self.loc_by_topic] and self.persist[item['name']] < item['persistency']:
-                    #if item['persistency']
+                    #if item['persistency'] 
                     self.loc_by_topic.append(item)
                     self.previous_pose = self.current_pose
                     self.force_check=False
@@ -278,6 +320,39 @@ class TopologicalNavLoc(object):
                 tlist.append(i)
         rlist.append(tlist)
         return rlist
+
+    """
+     localise_pose_cb
+
+     This function gets the node and closest node for a pose
+    """
+    def localise_pose_cb(self, req):
+        not_loc=True
+        distances=[]
+        distances=self.get_distances_to_pose(req.pose)
+        closeststr='none'
+        currentstr='none'
+
+
+        ind = 0
+        while not_loc and ind<len(distances) and ind<3 :
+            if self.point_in_poly(distances[ind]['node'], req.pose) :
+                currentstr=str(distances[ind]['node'].name)
+                closeststr=currentstr
+                not_loc=False
+            ind+=1
+
+        ind = 0
+        while not_loc and ind<len(distances) :
+            if distances[ind]['node'].name not in self.nogos :
+                closeststr=str(distances[ind]['node'].name)
+                not_loc=False
+            ind+=1
+            
+        return currentstr, closeststr
+
+
+        
 
     """
      Get No_Go_Nodes
