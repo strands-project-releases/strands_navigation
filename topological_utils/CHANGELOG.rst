@@ -2,6 +2,9 @@
 Changelog for package topological_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.0.44 (2016-05-30)
+-------------------
+
 0.0.43 (2016-05-25)
 -------------------
 * Using pointset rather than map name.
