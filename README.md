@@ -1,3 +1,35 @@
+## strands_navigation (indigo) - 1.0.1-0
+
+The packages in the `strands_navigation` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --non-interactive -t indigo -r indigo strands_navigation` on `Tue, 21 Jun 2016 14:38:40 -0000`
+
+These packages were released:
+- `emergency_behaviours`
+- `joy_map_saver`
+- `message_store_map_switcher`
+- `monitored_navigation`
+- `nav_goals_generator`
+- `pose_initialiser`
+- `strands_navigation`
+- `strands_navigation_msgs`
+- `topological_logging_manager`
+- `topological_navigation`
+- `topological_utils`
+
+Version of package(s) in repository `strands_navigation`:
+- upstream repository: https://github.com/strands-project/strands_navigation.git
+- release repository: https://github.com/strands-project-releases/strands_navigation.git
+- rosdistro version: `1.0.0-0`
+- old version: `1.0.0-0`
+- new version: `1.0.1-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.2`
+- vcstools version: `0.1.37`
+
+
 ## strands_navigation (indigo) - 1.0.0-0
 
 The packages in the `strands_navigation` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --non-interactive -t indigo -r indigo strands_navigation` on `Thu, 09 Jun 2016 12:41:08 -0000`
