@@ -2,6 +2,12 @@
 Changelog for package topological_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.2 (2016-10-31)
+------------------
+* makes sense
+* now the parameters `/topological_prediction/success_values` and `/topological_prediction/fail_values` and be used to set the values considered for failures and successes
+* Contributors: Jaime Pulido Fentanes
+
 1.0.1 (2016-06-21)
 ------------------
 * really fixing start now
