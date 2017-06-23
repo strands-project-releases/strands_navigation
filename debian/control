@@ -1,0 +1,12 @@
+Source: ros-indigo-topological-rviz-tools
+Section: misc
+Priority: extra
+Maintainer: Michal Staniaszek <staniasm@cs.bham.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), qtbase5-dev, ros-indigo-catkin, ros-indigo-geometry-msgs, ros-indigo-message-generation, ros-indigo-roscpp, ros-indigo-rviz, ros-indigo-std-msgs, ros-indigo-strands-navigation-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-topological-rviz-tools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5core5a, libqt5gui5, libqt5widgets5, ros-indigo-geometry-msgs, ros-indigo-message-runtime, ros-indigo-roscpp, ros-indigo-rviz, ros-indigo-std-msgs, ros-indigo-strands-navigation-msgs
+Description: Topological map construction for strands
