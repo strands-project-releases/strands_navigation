@@ -1,3 +1,38 @@
+## strands_navigation (kinetic) - 1.0.4-0
+
+The packages in the `strands_navigation` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -n -t kinetic -r kinetic strands_navigation` on `Fri, 30 Jun 2017 13:32:06 -0000`
+
+These packages were released:
+- `emergency_behaviours`
+- `joy_map_saver`
+- `message_store_map_switcher`
+- `monitored_navigation`
+- `nav_goals_generator`
+- `pose_initialiser`
+- `strands_navigation`
+- `strands_navigation_msgs`
+- `topological_logging_manager`
+- `topological_navigation`
+- `topological_rviz_tools`
+- `topological_utils`
+
+Version of package(s) in repository `strands_navigation`:
+
+- upstream repository: https://github.com/strands-project/strands_navigation.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.0.4-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.5`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## strands_navigation (indigo) - 1.0.4-5
 
 The packages in the `strands_navigation` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --non-interactive -t indigo -r indigo strands_navigation` on `Fri, 23 Jun 2017 08:59:53 -0000`
