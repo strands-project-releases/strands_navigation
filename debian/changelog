@@ -1,0 +1,286 @@
+ros-kinetic-joy-map-saver (1.0.4-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 22 Jun 2017 23:00:00 -0000
+
+ros-kinetic-joy-map-saver (1.0.3-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 11 Jan 2017 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (1.0.2-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 31 Oct 2016 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (1.0.1-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 20 Jun 2016 23:00:00 -0000
+
+ros-kinetic-joy-map-saver (1.0.0-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 08 Jun 2016 23:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.45-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sun, 05 Jun 2016 23:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.44-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sun, 29 May 2016 23:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.43-0xenial) xenial; urgency=high
+
+  * 0.0.42
+  * updated changelogs
+  * 0.0.41
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 24 May 2016 23:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.42-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 21 Mar 2016 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.41-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 03 Mar 2016 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.40-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sun, 07 Feb 2016 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.39-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 28 Jan 2016 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.38-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 17 Nov 2015 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.37-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 25 Aug 2015 23:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.36-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sat, 16 May 2015 23:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.35-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sat, 09 May 2015 23:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.34-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 04 May 2015 23:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.32-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sat, 11 Apr 2015 23:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.31-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 09 Apr 2015 23:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.29-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 23 Mar 2015 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.28-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 20 Mar 2015 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.27-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 19 Mar 2015 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.26-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 18 Mar 2015 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.25-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 18 Mar 2015 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.24-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 17 Mar 2015 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.23-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 17 Dec 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.22-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 26 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.21-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sun, 23 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.20-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.19-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.18-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.17-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.16-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.15-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.14-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.12-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 17 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.11-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 14 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.10-0xenial) xenial; urgency=high
+
+  * mapping launch files
+  * Create README.md
+  * Contributors: Jaime Pulido Fentanes
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 14 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.9-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 12 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.8-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 11 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.6-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 06 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.5-0xenial) xenial; urgency=high
+
+  * adding install targets renaming executables
+  * bug fix
+  * Adding licences and bug fix
+  * moving joy map saver here
+  * Contributors: Jaime Pulido Fentanes
+  * adding install targets renaming executables
+  * bug fix
+  * Adding licences and bug fix
+  * moving joy map saver here
+  * Contributors: Jaime Pulido Fentanes
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 05 Nov 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.4-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.3-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 29 Oct 2014 17:00:00 -0000
+
+ros-kinetic-joy-map-saver (0.0.2-0xenial) xenial; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 29 Oct 2014 15:05:00 -0000
+
+
