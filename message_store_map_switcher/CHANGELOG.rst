@@ -2,6 +2,11 @@
 Changelog for package message_store_map_switcher
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.5 (2018-04-17)
+------------------
+* updated email
+* Contributors: Nick Hawes
+
 1.0.4 (2017-06-23)
 ------------------
 

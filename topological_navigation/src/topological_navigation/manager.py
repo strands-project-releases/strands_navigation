@@ -162,6 +162,7 @@ class map_manager(object):
         #print len(available)
         if len(available) != 1:
              succeded = False
+             meta_out = None
              print 'there are no nodes or more than 1 with that name'
         else:
             succeded = True
@@ -195,6 +196,7 @@ class map_manager(object):
     def add_tag_cb(self, msg):
         #rospy.loginfo('Adding Tag '+msg.tag+' to '+str(msg.node))
         succeded = True
+        meta_out = None
         for j in msg.node:
 
             msg_store = MessageStoreProxy(collection='topological_maps')
@@ -240,6 +242,7 @@ class map_manager(object):
             available = msg_store.query(strands_navigation_msgs.msg.TopologicalNode._type, query, query_meta)
             #print len(available)
             succeded = False
+            meta_out = None
             for i in available:
                 msgid= i[1]['_id']
                 if 'tag' in i[1]:
@@ -256,6 +259,7 @@ class map_manager(object):
 
     def modify_tag_cb(self, msg):
         succeded = True
+        meta_out = None
         for node in msg.node:
             msg_store = MessageStoreProxy(collection='topological_maps')
             query = {"name" : node, "pointset": self.nodes.name}
@@ -366,10 +370,9 @@ class map_manager(object):
 
 
     def add_topological_node_cb(self, req):
-        res=self.add_topological_node(req.name, req.pose)
-        return res
+        return self.add_topological_node(req.name, req.pose, req.add_close_nodes)
 
-    def add_topological_node(self, node_name, node_pose):
+    def add_topological_node(self, node_name, node_pose, add_close_nodes):
         dist = 8.0
         #Get New Node Name
         if node_name:
@@ -406,25 +409,27 @@ class map_manager(object):
             v.y = float(j[1])
             node.verts.append(v)
 
-        close_nodes = []
-        for i in self.nodes.nodes :
-            ndist = node_dist(node, i)
-            if ndist < dist :
-                if i.name != 'ChargingPoint' :
-                    close_nodes.append(i.name)
+        if add_close_nodes:
+            close_nodes = []
+            for i in self.nodes.nodes:
+                ndist = node_dist(node, i)
+                if ndist < dist :
+                    if i.name != 'ChargingPoint':
+                        close_nodes.append(i.name)
 
-        for i in close_nodes:
-            e = strands_navigation_msgs.msg.Edge()
-            e.node = i
-            e.action = 'move_base'
-            eid = '%s_%s' %(node.name, i)
-            e.edge_id = eid
-            e.top_vel =0.55
-            e.map_2d = node.map
-            node.edges.append(e)
 
-        for i in close_nodes:
-            self.add_edge(i, node.name, 'move_base', '')
+            for i in close_nodes:
+                e = strands_navigation_msgs.msg.Edge()
+                e.node = i
+                e.action = 'move_base'
+                eid = '%s_%s' %(node.name, i)
+                e.edge_id = eid
+                e.top_vel =0.55
+                e.map_2d = node.map
+                node.edges.append(e)
+
+            for i in close_nodes:
+                self.add_edge(i, node.name, 'move_base', '')
 
         msg_store.insert(node,meta)
         return True
@@ -433,7 +438,7 @@ class map_manager(object):
         return self.update_node_name(req.node_name, req.new_name)
 
     def update_node_name(self, node_name, new_name):
-        if req.new_name in self.names:
+        if new_name in self.names:
             return False, "node with name {0} already exists".format(req.new_name)
 
         msg_store = MessageStoreProxy(collection='topological_maps')
