@@ -1,0 +1,12 @@
+Source: ros-kinetic-topological-navigation
+Section: misc
+Priority: extra
+Maintainer: Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-catkin, ros-kinetic-fremenserver, ros-kinetic-geometry-msgs, ros-kinetic-message-generation, ros-kinetic-mongodb-store, ros-kinetic-nav-msgs, ros-kinetic-roslib, ros-kinetic-rospy, ros-kinetic-rostest, ros-kinetic-rosunit, ros-kinetic-scitos-teleop, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-std-srvs, ros-kinetic-strands-morse, ros-kinetic-strands-navigation-msgs, ros-kinetic-tf, ros-kinetic-visualization-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-topological-navigation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-dwa-local-planner, ros-kinetic-fremenserver, ros-kinetic-geometry-msgs, ros-kinetic-message-runtime, ros-kinetic-mongodb-store, ros-kinetic-monitored-navigation, ros-kinetic-move-base, ros-kinetic-nav-msgs, ros-kinetic-rospy, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs, ros-kinetic-strands-navigation-msgs, ros-kinetic-visualization-msgs
+Description: The topological_navigation package
