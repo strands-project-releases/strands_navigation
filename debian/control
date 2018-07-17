@@ -1,0 +1,12 @@
+Source: ros-kinetic-pose-initialiser
+Section: misc
+Priority: extra
+Maintainer: Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-geometry-msgs, ros-kinetic-rospy
+Homepage: https://github.com/strands-project/strands_navigation
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-pose-initialiser
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-geometry-msgs, ros-kinetic-message-runtime, ros-kinetic-rospy
+Description: The pose_initialiser package
