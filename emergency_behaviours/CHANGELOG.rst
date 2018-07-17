@@ -2,6 +2,9 @@
 Changelog for package emergency_behaviours
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.6 (2018-07-17)
+------------------
+
 1.0.5 (2018-04-17)
 ------------------
 * Updated email to new Oxford address
