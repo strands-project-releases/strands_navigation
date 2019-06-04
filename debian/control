@@ -1,0 +1,12 @@
+Source: ros-kinetic-strands-navigation-msgs
+Section: misc
+Priority: extra
+Maintainer: Bruno Lacerda <b.lacerda@cs.bham.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-catkin, ros-kinetic-geometry-msgs, ros-kinetic-message-generation, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs
+Homepage: http://www/
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-strands-navigation-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-geometry-msgs, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs
+Description: The strands_navigation_msgs package
