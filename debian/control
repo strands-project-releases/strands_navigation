@@ -1,0 +1,12 @@
+Source: ros-kinetic-topological-logging-manager
+Section: misc
+Priority: extra
+Maintainer: cdondrup <cdondrup@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-message-generation, ros-kinetic-rosparam, ros-kinetic-rospy, ros-kinetic-std-msgs, ros-kinetic-strands-navigation-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-topological-logging-manager
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-message-runtime, ros-kinetic-rosparam, ros-kinetic-rospy, ros-kinetic-std-msgs, ros-kinetic-strands-navigation-msgs
+Description: The topological_logging_manager package
