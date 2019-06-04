@@ -1,0 +1,12 @@
+Source: ros-kinetic-strands-navigation
+Section: misc
+Priority: extra
+Maintainer: Bruno Lacerda <b.lacerda@cs.bham.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-strands-navigation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-emergency-behaviours, ros-kinetic-joy-map-saver, ros-kinetic-message-store-map-switcher, ros-kinetic-monitored-navigation, ros-kinetic-nav-goals-generator, ros-kinetic-strands-navigation-msgs, ros-kinetic-topological-logging-manager, ros-kinetic-topological-navigation, ros-kinetic-topological-utils
+Description: The strands_navigation package
