@@ -1,3 +1,37 @@
+## strands_navigation (melodic) - 1.1.0-1
+
+The packages in the `strands_navigation` repository were released into the `melodic` distro by running `/usr/bin/bloom-release -n -t melodic -r melodic strands_navigation` on `Wed, 27 Nov 2019 21:58:52 -0000`
+
+These packages were released:
+- `emergency_behaviours`
+- `joy_map_saver`
+- `monitored_navigation`
+- `nav_goals_generator`
+- `pose_initialiser`
+- `strands_navigation`
+- `strands_navigation_msgs`
+- `topological_logging_manager`
+- `topological_navigation`
+- `topological_rviz_tools`
+- `topological_utils`
+
+Version of package(s) in repository `strands_navigation`:
+
+- upstream repository: https://github.com/strands-project/strands_navigation.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.1.0-1`
+
+Versions of tools used:
+
+- bloom version: `0.9.0`
+- catkin_pkg version: `0.4.14`
+- rosdep version: `0.18.0`
+- rosdistro version: `0.7.5`
+- vcstools version: `0.1.42`
+
+
 ## strands_navigation (kinetic) - 1.0.8-1
 
 The packages in the `strands_navigation` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release -y --no-web -t kinetic -r kinetic strands_navigation` on `Tue, 04 Jun 2019 10:06:12 -0000`
