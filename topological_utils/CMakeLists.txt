@@ -76,6 +76,7 @@ catkin_package(
    scripts/add_content.py
    scripts/add_edge.py
    scripts/add_node.py
+   scripts/add_node_tags.py
    scripts/check_map
    scripts/crop_map.py
    scripts/dummy_topological_navigation.py
@@ -94,7 +95,9 @@ catkin_package(
    scripts/node_rm.py
    scripts/node_metadata.py
    scripts/plot_topo_map.py
+   scripts/plot_yaml.py
    scripts/rm_map_from_db.py
+   scripts/remove_node_tags.py
    scripts/rename_node
    scripts/tmap_from_waypoints.py
    scripts/tmap_to_yaml.py
