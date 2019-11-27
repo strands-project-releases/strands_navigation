@@ -1,0 +1,12 @@
+Source: ros-melodic-topological-utils
+Section: misc
+Priority: optional
+Maintainer: Jaime Pulido Fentanes <jpulidofentanes@lincoln.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-geometry-msgs, ros-melodic-message-generation, ros-melodic-mongodb-store, ros-melodic-rospy, ros-melodic-strands-navigation-msgs, ros-melodic-topological-navigation, ros-melodic-visualization-msgs
+Homepage: https://github.com/strands-project/strands_navigation
+Standards-Version: 3.9.2
+
+Package: ros-melodic-topological-utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-geometry-msgs, ros-melodic-message-runtime, ros-melodic-mongodb-store, ros-melodic-rospy, ros-melodic-strands-navigation-msgs, ros-melodic-topological-navigation, ros-melodic-visualization-msgs
+Description: The topological_utils package
