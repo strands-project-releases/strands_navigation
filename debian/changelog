@@ -1,0 +1,328 @@
+ros-melodic-joy-map-saver (1.2.0-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 09 Apr 2020 00:00:00 -0000
+
+ros-melodic-joy-map-saver (1.1.0-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 27 Nov 2019 00:00:00 -0000
+
+ros-melodic-joy-map-saver (1.0.8-1bionic) bionic; urgency=high
+
+  * Merge branch 'indigo-devel' of https://github.com/strands-project/strands_navigation into indigo-devel
+  * Merge pull request #369 <https://github.com/strands-project/strands_navigation/issues/369> from strands-project/ori-indigo-devel
+    Support for multi-robot and different global planners
+  * Merge remote-tracking branch 'ori/indigo-devel' into indigo-devel
+    Bringing in changes from ORI for multi-robot and different base planners.
+  * update of absolute/relative topic names for multi-robot setup
+  * Contributors: Bruno Lacerda, Nick Hawes
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 04 Jun 2019 00:00:00 -0000
+
+ros-melodic-joy-map-saver (1.0.7-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 26 Oct 2018 00:00:00 -0000
+
+ros-melodic-joy-map-saver (1.0.6-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 17 Jul 2018 00:00:00 -0000
+
+ros-melodic-joy-map-saver (1.0.5-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 17 Apr 2018 00:00:00 -0000
+
+ros-melodic-joy-map-saver (1.0.4-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 23 Jun 2017 00:00:00 -0000
+
+ros-melodic-joy-map-saver (1.0.3-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 11 Jan 2017 00:00:00 -0000
+
+ros-melodic-joy-map-saver (1.0.2-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 31 Oct 2016 00:00:00 -0000
+
+ros-melodic-joy-map-saver (1.0.1-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 21 Jun 2016 00:00:00 -0000
+
+ros-melodic-joy-map-saver (1.0.0-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 09 Jun 2016 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.45-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 06 Jun 2016 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.44-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 30 May 2016 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.43-1bionic) bionic; urgency=high
+
+  * 0.0.42
+  * updated changelogs
+  * 0.0.41
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 25 May 2016 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.42-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 21 Mar 2016 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.41-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 03 Mar 2016 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.40-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sun, 07 Feb 2016 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.39-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 28 Jan 2016 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.38-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 17 Nov 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.37-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 26 Aug 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.36-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sun, 17 May 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.35-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sun, 10 May 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.34-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 05 May 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.32-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sun, 12 Apr 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.31-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 10 Apr 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.29-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 23 Mar 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.28-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 20 Mar 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.27-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 19 Mar 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.26-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 18 Mar 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.25-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 18 Mar 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.24-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 17 Mar 2015 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.23-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 17 Dec 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.22-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 26 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.21-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Sun, 23 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.20-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.19-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.18-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.17-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.16-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.15-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.14-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.12-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Mon, 17 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.11-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 14 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.10-1bionic) bionic; urgency=high
+
+  * mapping launch files
+  * Create README.md
+  * Contributors: Jaime Pulido Fentanes
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Fri, 14 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.9-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 12 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.8-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Tue, 11 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.6-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 06 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.5-1bionic) bionic; urgency=high
+
+  * adding install targets renaming executables
+  * bug fix
+  * Adding licences and bug fix
+  * moving joy map saver here
+  * Contributors: Jaime Pulido Fentanes
+  * adding install targets renaming executables
+  * bug fix
+  * Adding licences and bug fix
+  * moving joy map saver here
+  * Contributors: Jaime Pulido Fentanes
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 05 Nov 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.4-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.3-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 29 Oct 2014 17:00:00 -0000
+
+ros-melodic-joy-map-saver (0.0.2-1bionic) bionic; urgency=high
+
+
+
+ -- Jaime Pulido Fentanes <pulidofentanes@gmail.com>  Wed, 29 Oct 2014 15:05:00 -0000
+
+
