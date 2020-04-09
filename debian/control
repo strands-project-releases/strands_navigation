@@ -1,0 +1,12 @@
+Source: ros-melodic-monitored-navigation
+Section: misc
+Priority: optional
+Maintainer: Bruno Lacerda <b.lacerda@cs.bham.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), python-yaml, ros-melodic-actionlib, ros-melodic-actionlib-msgs, ros-melodic-catkin, ros-melodic-geometry-msgs, ros-melodic-mongodb-store, ros-melodic-move-base-msgs, ros-melodic-movebase-state-service, ros-melodic-rospy, ros-melodic-smach, ros-melodic-smach-ros, ros-melodic-std-msgs, ros-melodic-std-srvs, ros-melodic-strands-navigation-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-monitored-navigation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-yaml, ros-melodic-actionlib, ros-melodic-actionlib-msgs, ros-melodic-geometry-msgs, ros-melodic-mongodb-store, ros-melodic-move-base-msgs, ros-melodic-movebase-state-service, ros-melodic-rospy, ros-melodic-smach, ros-melodic-smach-ros, ros-melodic-std-msgs, ros-melodic-std-srvs, ros-melodic-strands-navigation-msgs
+Description: The monitored_navigation package
