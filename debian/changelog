@@ -1,0 +1,327 @@
+ros-melodic-nav-goals-generator (1.2.0-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Thu, 09 Apr 2020 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (1.1.0-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 27 Nov 2019 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (1.0.8-1bionic) bionic; urgency=high
+
+  * Merge branch 'indigo-devel' of https://github.com/strands-project/strands_navigation into indigo-devel
+  * Contributors: Bruno Lacerda
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Tue, 04 Jun 2019 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (1.0.7-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Fri, 26 Oct 2018 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (1.0.6-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Tue, 17 Jul 2018 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (1.0.5-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Tue, 17 Apr 2018 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (1.0.4-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Fri, 23 Jun 2017 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (1.0.3-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 11 Jan 2017 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (1.0.2-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Mon, 31 Oct 2016 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (1.0.1-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Tue, 21 Jun 2016 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (1.0.0-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Thu, 09 Jun 2016 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.45-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Mon, 06 Jun 2016 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.44-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Mon, 30 May 2016 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.43-1bionic) bionic; urgency=high
+
+  * 0.0.42
+  * updated changelogs
+  * 0.0.41
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 25 May 2016 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.42-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Mon, 21 Mar 2016 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.41-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Thu, 03 Mar 2016 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.40-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Sun, 07 Feb 2016 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.39-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Thu, 28 Jan 2016 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.38-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Tue, 17 Nov 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.37-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 26 Aug 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.36-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Sun, 17 May 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.35-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Sun, 10 May 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.34-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Tue, 05 May 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.32-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Sun, 12 Apr 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.31-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Fri, 10 Apr 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.29-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Mon, 23 Mar 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.28-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Fri, 20 Mar 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.27-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Thu, 19 Mar 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.26-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 18 Mar 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.25-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 18 Mar 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.24-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Tue, 17 Mar 2015 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.23-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 17 Dec 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.22-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 26 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.21-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Sun, 23 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.20-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.19-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.18-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.17-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.16-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.15-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.14-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.12-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Mon, 17 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.11-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Fri, 14 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.10-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Fri, 14 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.9-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 12 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.8-1bionic) bionic; urgency=high
+
+  * Fixing import of service
+    Fixing #118 <https://github.com/strands-project/strands_navigation/issues/118>
+    Had to rename the node due to the old ROS python bug where the cannot have the same name as the package otherwise it cannot find its own messages or services.
+  * Contributors: Christian Dondrup
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Tue, 11 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.7-1bionic) bionic; urgency=high
+
+  * changed version number to be the same for all packages
+  * fix the new line in the launch file
+  * fix the launch file
+  * fix nav_goals_msgs dependency
+  * delete .swp
+  * move nav_goals_generator from strands_utils
+  * Contributors: Ferdian Jovan, Marc Hanheide
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Tue, 11 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.6-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Thu, 06 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.5-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 05 Nov 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.4-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.3-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 29 Oct 2014 17:00:00 -0000
+
+ros-melodic-nav-goals-generator (0.0.2-1bionic) bionic; urgency=high
+
+
+
+ -- Lars Kunze <l.kunze@cs.bham.ac.uk>  Wed, 29 Oct 2014 15:05:00 -0000
+
+
