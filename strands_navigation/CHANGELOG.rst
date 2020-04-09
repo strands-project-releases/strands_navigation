@@ -2,6 +2,9 @@
 Changelog for package strands_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.2.0 (2020-04-09)
+------------------
+
 1.1.0 (2019-11-27)
 ------------------
 * Merge branch 'indigo-devel' into fix_route_search
