@@ -1,0 +1,331 @@
+ros-melodic-strands-navigation (2.0.0-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Mon, 20 Apr 2020 00:00:00 -0000
+
+ros-melodic-strands-navigation (1.2.0-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Thu, 09 Apr 2020 00:00:00 -0000
+
+ros-melodic-strands-navigation (1.1.0-1bionic) bionic; urgency=high
+
+  * Merge branch 'indigo-devel' into fix_route_search
+  * Merge pull request #376 <https://github.com/strands-project/strands_navigation/issues/376> from gpdas/exec_policy_reconf_edge
+    enable edge_reconfig for execute_policy_mode server
+  * removing message_store_map_switcher from dependencies
+  * Contributors: Jaime Pulido Fentanes, gpdas
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 27 Nov 2019 00:00:00 -0000
+
+ros-melodic-strands-navigation (1.0.8-1bionic) bionic; urgency=high
+
+  * Merge branch 'indigo-devel' of https://github.com/strands-project/strands_navigation into indigo-devel
+  * Contributors: Bruno Lacerda
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Tue, 04 Jun 2019 00:00:00 -0000
+
+ros-melodic-strands-navigation (1.0.7-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Fri, 26 Oct 2018 00:00:00 -0000
+
+ros-melodic-strands-navigation (1.0.6-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Tue, 17 Jul 2018 00:00:00 -0000
+
+ros-melodic-strands-navigation (1.0.5-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Tue, 17 Apr 2018 00:00:00 -0000
+
+ros-melodic-strands-navigation (1.0.4-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Fri, 23 Jun 2017 00:00:00 -0000
+
+ros-melodic-strands-navigation (1.0.3-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 11 Jan 2017 00:00:00 -0000
+
+ros-melodic-strands-navigation (1.0.2-1bionic) bionic; urgency=high
+
+  * adding emergency behaviours as a dependency (#328 <https://github.com/strands-project/strands_navigation/issues/328>)
+  * Contributors: Jaime Pulido Fentanes
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Mon, 31 Oct 2016 00:00:00 -0000
+
+ros-melodic-strands-navigation (1.0.1-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Tue, 21 Jun 2016 00:00:00 -0000
+
+ros-melodic-strands-navigation (1.0.0-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Thu, 09 Jun 2016 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.45-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Mon, 06 Jun 2016 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.44-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Mon, 30 May 2016 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.43-1bionic) bionic; urgency=high
+
+  * 0.0.42
+  * updated changelogs
+  * 0.0.41
+  * updated changelogs
+  * Contributors: Jenkins
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 25 May 2016 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.42-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Mon, 21 Mar 2016 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.41-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Thu, 03 Mar 2016 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.40-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Sun, 07 Feb 2016 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.39-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Thu, 28 Jan 2016 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.38-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Tue, 17 Nov 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.37-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 26 Aug 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.36-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Sun, 17 May 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.35-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Sun, 10 May 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.34-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Tue, 05 May 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.32-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Sun, 12 Apr 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.31-1bionic) bionic; urgency=high
+
+  * Adding topological_logging_manager to meta package
+    Closes #212 <https://github.com/strands-project/strands_navigation/issues/212>
+  * Contributors: Christian Dondrup
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Fri, 10 Apr 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.29-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Mon, 23 Mar 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.28-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Fri, 20 Mar 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.27-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Thu, 19 Mar 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.26-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 18 Mar 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.25-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 18 Mar 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.24-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Tue, 17 Mar 2015 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.23-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 17 Dec 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.22-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 26 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.21-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Sun, 23 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.20-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.19-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.18-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.17-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.16-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Fri, 21 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.15-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.14-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 19 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.12-1bionic) bionic; urgency=high
+
+  * including run dependencies on package.xml
+  * Contributors: Jaime Pulido Fentanes
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Mon, 17 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.11-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Fri, 14 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.10-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Fri, 14 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.9-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 12 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.8-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Tue, 11 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.6-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Thu, 06 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.5-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 05 Nov 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.4-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Thu, 30 Oct 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.3-1bionic) bionic; urgency=high
+
+
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+ros-melodic-strands-navigation (0.0.2-1bionic) bionic; urgency=high
+
+  * 0.0.1
+  * fixed CMakeLists.txt to be a proper meta package
+  * added changelogs
+  * Adding Missing TopologicalMap.msg and changing maintainer emails, names and Licences for Packages
+  * create metapackage
+  * Contributors: Bruno Lacerda, Jaime Pulido Fentanes, Marc Hanheide
+
+ -- Bruno Lacerda <b.lacerda@cs.bham.ac.uk>  Wed, 29 Oct 2014 00:00:00 -0000
+
+
