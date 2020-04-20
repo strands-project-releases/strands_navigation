@@ -2,6 +2,20 @@
 Changelog for package strands_navigation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.0 (2020-04-20)
+------------------
+
+1.2.0 (2020-04-09)
+------------------
+
+1.1.0 (2019-11-27)
+------------------
+* Merge branch 'indigo-devel' into fix_route_search
+* Merge pull request `#376 <https://github.com/strands-project/strands_navigation/issues/376>`_ from gpdas/exec_policy_reconf_edge
+  enable edge_reconfig for execute_policy_mode server
+* removing message_store_map_switcher from dependencies
+* Contributors: Jaime Pulido Fentanes, gpdas
+
 1.0.8 (2019-06-04)
 ------------------
 * Merge branch 'indigo-devel' of https://github.com/strands-project/strands_navigation into indigo-devel
