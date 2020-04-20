@@ -2,6 +2,15 @@
 Changelog for package pose_initialiser
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.0 (2020-04-20)
+------------------
+
+1.2.0 (2020-04-09)
+------------------
+
+1.1.0 (2019-11-27)
+------------------
+
 1.0.8 (2019-06-04)
 ------------------
 * Merge branch 'indigo-devel' of https://github.com/strands-project/strands_navigation into indigo-devel
