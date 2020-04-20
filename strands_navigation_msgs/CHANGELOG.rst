@@ -2,6 +2,15 @@
 Changelog for package strands_navigation_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.0.0 (2020-04-20)
+------------------
+
+1.2.0 (2020-04-09)
+------------------
+
+1.1.0 (2019-11-27)
+------------------
+
 1.0.8 (2019-06-04)
 ------------------
 * Merge pull request `#374 <https://github.com/strands-project/strands_navigation/issues/374>`_ from Jailander/edge-reconf
