@@ -1,0 +1,12 @@
+Source: ros-kinetic-joy-map-saver
+Section: misc
+Priority: optional
+Maintainer: Jaime Pulido Fentanes <pulidofentanes@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-roscpp, ros-kinetic-rospy, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs
+Homepage: https://github.com/strands-project/strands_navigation
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-joy-map-saver
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-gmapping, ros-kinetic-roscpp, ros-kinetic-rospy, ros-kinetic-sensor-msgs, ros-kinetic-std-msgs
+Description: The map_saver package
