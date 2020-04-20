@@ -1,0 +1,12 @@
+Source: ros-kinetic-monitored-navigation
+Section: misc
+Priority: optional
+Maintainer: Bruno Lacerda <b.lacerda@cs.bham.ac.uk>
+Build-Depends: debhelper (>= 9.0.0), python-yaml, ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-catkin, ros-kinetic-geometry-msgs, ros-kinetic-mongodb-store, ros-kinetic-move-base-msgs, ros-kinetic-movebase-state-service, ros-kinetic-rospy, ros-kinetic-smach, ros-kinetic-smach-ros, ros-kinetic-std-msgs, ros-kinetic-std-srvs, ros-kinetic-strands-navigation-msgs
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-monitored-navigation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-yaml, ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-geometry-msgs, ros-kinetic-mongodb-store, ros-kinetic-move-base-msgs, ros-kinetic-movebase-state-service, ros-kinetic-rospy, ros-kinetic-smach, ros-kinetic-smach-ros, ros-kinetic-std-msgs, ros-kinetic-std-srvs, ros-kinetic-strands-navigation-msgs
+Description: The monitored_navigation package
